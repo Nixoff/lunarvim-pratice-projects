@@ -1,0 +1,180 @@
+@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
+
+:root {
+  --font-display: "gg sans Normal","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --text-link: var(--blue-345);
+  --blue-345: hsl(var(--blue-345-hsl)/1);
+  --blue-345-hsl: 200 calc(var(--saturation-factor, 1)*100%) 49.4%;
+  --saturation-factor: 1;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-display);
+  font-weight: 400;
+  background-color: #36393F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.text-md-normal {
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(181,186,193)
+}
+
+.required {
+  color: #f23f42;
+  padding-left:4px;
+}
+
+.container {
+  background-color: #2F3136;
+  width: 340px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.discord-logo {
+  background-image: url('https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5493894cf60b300587_full_logo_white_RGB.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.login-header {
+  margin-bottom: 20px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.last-input-group {
+  margin-bottom: inherit;
+} 
+
+.label {
+  text-rendering: optimizeLegibility;
+  letter-spacing: .02em;
+  margin-bottom: 8px;
+  line-height: 16px;
+  font-size: 12px;
+  color: rgb(181,186,193);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input[type="email"],
+input[type="password"] {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(30, 31, 34);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 2px 16px;
+  background-color: hsl(235 calc(1 *85.6%) 64.7% /1);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-lg {
+  height: 44px;
+  min-width: 130px;
+  min-height: 44px;
+  font-weight: 500;
+  padding: 2px 16px;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #677BC4;
+}
+
+.extra-options {
+  margin: 4px 0 20px;
+  color: #B9BBBE;
+  font-size: 14px;
+}
+
+.extra-options ~ .extra-options {
+  margin-bottom: inherit;
+}
+
+
+.extra-options a {
+  color: #B9BBBE;
+  text-decoration: none;
+}
+
+.link {
+  font-weight: normal;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: left;
+  padding:0;
+  color: var(--text-link) !important;
+}
+
+.extra-options a:hover {
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(./assets/bg.svg);
+    background-size: cover
+  }
+
+  .discord-logo {
+    display: none;
+  }
+
+  .container {
+    min-width: 480px ;
+    padding: 32px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    background-color: inherit;
+    width: 100%;
+    border-radius: inherit;
+    box-shadow: inherit;
+  }
+  body {
+    height: inherit;
+  }
+}

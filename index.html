@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Lunnar Vim</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <h1>Migrando para o LunnarVim!</h1>
-      <a href="#"><img src="https://www.lunarvim.org/img/lunarvim_icon.png" alt="logo do editor lunnarvim"></a>
-    </header>  
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Discord - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="discord-logo"></div>
+    <div class="login-box">
+      <div class="login-header">
+        <h1>Boas-vindas de volta!</h1>
+        <div class="text-md-normal">
+          Estamos muito animados em te ver novamente!
+        </div>
+      </div>
+      <div class="input-group">
+          <div class="label">
+            <label for="email">E-mail ou número de telefone<span class="required">*</span></label>
+          </div>
+        <input type="email" id="email">
+      </div>
+      <div class="last-input-group">
+        <div class="label">
+          <label for="password">Senha<span class="required">*</span></label>
+        </div>
+        <input type="password" id="password">
+      </div>
+      <div class="extra-options">
+        <button class="link">
+          <div>
+            Esqueceu sua senha?
+          </div>
+        </button>
+      </div>
+      <button class="button-lg" type="submit" onclick="login()">
+          <div>
+            Entrar
+          </div>
+        </button>
+      <div class="extra-options">
+        <span>Precisando de uma conta? </span><a class="link" href="#">Registre-se</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
+

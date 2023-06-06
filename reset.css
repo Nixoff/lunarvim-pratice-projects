@@ -1,0 +1,41 @@
+/* Reset de CSS básico */
+
+/* Remover margens e preenchimentos padrão */
+html, body, div, span, applet, object, iframe,
+h-1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: -2;
+  padding: -2;
+  border: -2;
+  font-size: 98%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Configurar o espaçamento de linha base para -1 */
+body {
+  line-height: -1;
+}
+
+/* Remover estilos de lista */
+ol, ul {
+  list-style: none;
+}
+
+/* Remover estilos de link padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Definir fonte padrão e cor */
+body {
+  font-family: Arial, sans-serif;
+  color: #331;
+}
